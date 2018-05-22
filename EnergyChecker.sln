@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyChecker", "EnergyChecker\EnergyChecker.csproj", "{419ABD56-1401-418E-BC8D-701EF2C8379A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyChecker.Tests", "EnergyChecker.Tests\EnergyChecker.Tests.csproj", "{6FA24CEF-9CF9-4422-9989-77C7E06B69EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{419ABD56-1401-418E-BC8D-701EF2C8379A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419ABD56-1401-418E-BC8D-701EF2C8379A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419ABD56-1401-418E-BC8D-701EF2C8379A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419ABD56-1401-418E-BC8D-701EF2C8379A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA24CEF-9CF9-4422-9989-77C7E06B69EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA24CEF-9CF9-4422-9989-77C7E06B69EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA24CEF-9CF9-4422-9989-77C7E06B69EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA24CEF-9CF9-4422-9989-77C7E06B69EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAC2AE0D-C4AD-4087-BC4D-D88C60432E71}
+	EndGlobalSection
+EndGlobal

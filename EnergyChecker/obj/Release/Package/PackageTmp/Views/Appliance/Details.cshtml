@@ -1,0 +1,50 @@
+﻿@model EnergyChecker.Models.Appliance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Appliance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Watts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Watts)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinutesUsedPerDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinutesUsedPerDay)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ApplianceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

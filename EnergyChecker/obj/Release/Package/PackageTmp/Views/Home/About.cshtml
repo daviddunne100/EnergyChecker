@@ -1,0 +1,30 @@
+﻿@model IEnumerable<EnergyChecker.ViewModels.RegistrationDateGroup>
+
+@{
+	ViewBag.Title = "User Statistics";
+}
+
+<h2>User Statistics</h2>
+
+<table>
+	<tr>
+		<th>
+			Registration Date
+		</th>
+		<th>
+			Users
+		</th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.RegistrationDate)
+			</td>
+			<td>
+				@item.UserCount
+			</td>
+		</tr>
+	}
+</table>

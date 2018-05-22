@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EnergyChecker.Models.Appliance>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplianceTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Watts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinutesUsedPerDay)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplianceTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Make)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Watts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinutesUsedPerDay)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ApplianceID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ApplianceID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ApplianceID })
+        </td>
+    </tr>
+}
+
+</table>
