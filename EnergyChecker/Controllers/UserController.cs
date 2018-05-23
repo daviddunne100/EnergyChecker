@@ -15,7 +15,7 @@ namespace EnergyChecker.Controllers
 {
     public class UserController : Controller
     {
-        private EnergyCheckerContext db = new EnergyCheckerContext();
+        private EcheckerAzureDB db = new EcheckerAzureDB();
 
         // GET: User
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)

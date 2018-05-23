@@ -8,9 +8,9 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace EnergyChecker.DAL
 {
-    public class EnergyCheckerContext : DbContext
+    public class EcheckerAzureDB : DbContext
     {
-        public EnergyCheckerContext() : base("EnergyCheckerContext")
+        public EcheckerAzureDB() : base("EcheckerAzureDB")
         {
         }
 

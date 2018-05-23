@@ -10,7 +10,7 @@ namespace EnergyChecker.Controllers
 {
     public class HomeController : Controller
     {
-        private EnergyCheckerContext db = new EnergyCheckerContext();
+        private EcheckerAzureDB db = new EcheckerAzureDB();
 
         public ActionResult Index()
         {
